@@ -124,73 +124,22 @@
  "elf_functions" :
  [
   {
-   "name" : "InitializeNativeBridge"
-  },
-  {
-   "name" : "LoadNativeBridge"
-  },
-  {
    "name" : "NativeBridgeAvailable"
-  },
-  {
-   "name" : "NativeBridgeCreateNamespace"
-  },
-  {
-   "name" : "NativeBridgeError"
   },
   {
    "name" : "NativeBridgeGetError"
   },
   {
-   "name" : "NativeBridgeGetExportedNamespace"
-  },
-  {
-   "name" : "NativeBridgeGetSignalHandler"
-  },
-  {
    "name" : "NativeBridgeGetTrampoline"
   },
   {
-   "name" : "NativeBridgeGetVersion"
-  },
-  {
-   "name" : "NativeBridgeInitAnonymousNamespace"
-  },
-  {
    "name" : "NativeBridgeInitialized"
-  },
-  {
-   "name" : "NativeBridgeIsPathSupported"
-  },
-  {
-   "name" : "NativeBridgeIsSupported"
-  },
-  {
-   "name" : "NativeBridgeLinkNamespaces"
-  },
-  {
-   "name" : "NativeBridgeLoadLibrary"
-  },
-  {
-   "name" : "NativeBridgeLoadLibraryExt"
-  },
-  {
-   "name" : "NativeBridgeNameAcceptable"
-  },
-  {
-   "name" : "NativeBridgeUnloadLibrary"
   },
   {
    "name" : "NeedsNativeBridge"
   },
   {
    "name" : "PreInitializeNativeBridge"
-  },
-  {
-   "name" : "PreZygoteForkNativeBridge"
-  },
-  {
-   "name" : "UnloadNativeBridge"
   }
  ],
  "elf_objects" : [],
@@ -5491,71 +5440,8 @@
  "functions" :
  [
   {
-   "function_name" : "android::InitializeNativeBridge",
-   "linker_set_key" : "InitializeNativeBridge",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIP7_JNIEnv"
-    },
-    {
-     "referenced_type" : "_ZTIPKc"
-    }
-   ],
-   "return_type" : "_ZTIb",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::LoadNativeBridge",
-   "linker_set_key" : "LoadNativeBridge",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIPKc"
-    },
-    {
-     "referenced_type" : "_ZTIPKN7android28NativeBridgeRuntimeCallbacksE"
-    }
-   ],
-   "return_type" : "_ZTIb",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
    "function_name" : "android::NativeBridgeAvailable",
    "linker_set_key" : "NativeBridgeAvailable",
-   "return_type" : "_ZTIb",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeCreateNamespace",
-   "linker_set_key" : "NativeBridgeCreateNamespace",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIPKc"
-    },
-    {
-     "referenced_type" : "_ZTIPKc"
-    },
-    {
-     "referenced_type" : "_ZTIPKc"
-    },
-    {
-     "referenced_type" : "_ZTIy"
-    },
-    {
-     "referenced_type" : "_ZTIPKc"
-    },
-    {
-     "referenced_type" : "_ZTIPN7android25native_bridge_namespace_tE"
-    }
-   ],
-   "return_type" : "_ZTIPN7android25native_bridge_namespace_tE",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeError",
-   "linker_set_key" : "NativeBridgeError",
    "return_type" : "_ZTIb",
    "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
   },
@@ -5563,30 +5449,6 @@
    "function_name" : "android::NativeBridgeGetError",
    "linker_set_key" : "NativeBridgeGetError",
    "return_type" : "_ZTIPKc",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeGetExportedNamespace",
-   "linker_set_key" : "NativeBridgeGetExportedNamespace",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIPKc"
-    }
-   ],
-   "return_type" : "_ZTIPN7android25native_bridge_namespace_tE",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeGetSignalHandler",
-   "linker_set_key" : "NativeBridgeGetSignalHandler",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIi"
-    }
-   ],
-   "return_type" : "_ZTIPFbiP7siginfoPvE",
    "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
   },
   {
@@ -5611,129 +5473,9 @@
    "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
   },
   {
-   "function_name" : "android::NativeBridgeGetVersion",
-   "linker_set_key" : "NativeBridgeGetVersion",
-   "return_type" : "_ZTIj",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeInitAnonymousNamespace",
-   "linker_set_key" : "NativeBridgeInitAnonymousNamespace",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIPKc"
-    },
-    {
-     "referenced_type" : "_ZTIPKc"
-    }
-   ],
-   "return_type" : "_ZTIb",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
    "function_name" : "android::NativeBridgeInitialized",
    "linker_set_key" : "NativeBridgeInitialized",
    "return_type" : "_ZTIb",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeIsPathSupported",
-   "linker_set_key" : "NativeBridgeIsPathSupported",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIPKc"
-    }
-   ],
-   "return_type" : "_ZTIb",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeIsSupported",
-   "linker_set_key" : "NativeBridgeIsSupported",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIPKc"
-    }
-   ],
-   "return_type" : "_ZTIb",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeLinkNamespaces",
-   "linker_set_key" : "NativeBridgeLinkNamespaces",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIPN7android25native_bridge_namespace_tE"
-    },
-    {
-     "referenced_type" : "_ZTIPN7android25native_bridge_namespace_tE"
-    },
-    {
-     "referenced_type" : "_ZTIPKc"
-    }
-   ],
-   "return_type" : "_ZTIb",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeLoadLibrary",
-   "linker_set_key" : "NativeBridgeLoadLibrary",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIPKc"
-    },
-    {
-     "referenced_type" : "_ZTIi"
-    }
-   ],
-   "return_type" : "_ZTIPv",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeLoadLibraryExt",
-   "linker_set_key" : "NativeBridgeLoadLibraryExt",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIPKc"
-    },
-    {
-     "referenced_type" : "_ZTIi"
-    },
-    {
-     "referenced_type" : "_ZTIPN7android25native_bridge_namespace_tE"
-    }
-   ],
-   "return_type" : "_ZTIPv",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeNameAcceptable",
-   "linker_set_key" : "NativeBridgeNameAcceptable",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIPKc"
-    }
-   ],
-   "return_type" : "_ZTIb",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::NativeBridgeUnloadLibrary",
-   "linker_set_key" : "NativeBridgeUnloadLibrary",
-   "parameters" :
-   [
-    {
-     "referenced_type" : "_ZTIPv"
-    }
-   ],
-   "return_type" : "_ZTIi",
    "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
   },
   {
@@ -5761,18 +5503,6 @@
     }
    ],
    "return_type" : "_ZTIb",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::PreZygoteForkNativeBridge",
-   "linker_set_key" : "PreZygoteForkNativeBridge",
-   "return_type" : "_ZTIv",
-   "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
-  },
-  {
-   "function_name" : "android::UnloadNativeBridge",
-   "linker_set_key" : "UnloadNativeBridge",
-   "return_type" : "_ZTIv",
    "source_file" : "art/libnativebridge/include/nativebridge/native_bridge.h"
   }
  ],
