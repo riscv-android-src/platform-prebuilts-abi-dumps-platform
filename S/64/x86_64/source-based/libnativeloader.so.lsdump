@@ -218,9 +218,6 @@
    "name" : "FindNativeLoaderNamespaceByClassLoader"
   },
   {
-   "name" : "InitializeNativeLoader"
-  },
-  {
    "name" : "NativeLoaderFreeErrorMessage"
   },
   {
@@ -228,9 +225,6 @@
   },
   {
    "name" : "OpenNativeLibraryInNamespace"
-  },
-  {
-   "name" : "ResetNativeLoader"
   }
  ],
  "elf_objects" : [],
@@ -5298,12 +5292,6 @@
    "source_file" : "art/libnativeloader/include/nativeloader/native_loader.h"
   },
   {
-   "function_name" : "android::InitializeNativeLoader",
-   "linker_set_key" : "InitializeNativeLoader",
-   "return_type" : "_ZTIv",
-   "source_file" : "art/libnativeloader/include/nativeloader/native_loader.h"
-  },
-  {
    "function_name" : "android::NativeLoaderFreeErrorMessage",
    "linker_set_key" : "NativeLoaderFreeErrorMessage",
    "parameters" :
@@ -5367,12 +5355,6 @@
     }
    ],
    "return_type" : "_ZTIPv",
-   "source_file" : "art/libnativeloader/include/nativeloader/native_loader.h"
-  },
-  {
-   "function_name" : "android::ResetNativeLoader",
-   "linker_set_key" : "ResetNativeLoader",
-   "return_type" : "_ZTIv",
    "source_file" : "art/libnativeloader/include/nativeloader/native_loader.h"
   }
  ],
